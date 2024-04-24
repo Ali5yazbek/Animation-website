@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel 1</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+
+
+
+        <div class="night">
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <div class="untoldcoing"></div>
+            <p>Welcome back</p>
+        </div>
+
+        <style>
+            body {
+                background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+                height: 100vh;
+                overflow: hidden;
+                display: flex;
+                font-family: "Anton", sans-serif;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .night {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transform: rotateZ(45deg);
+            }
+
+            .untoldcoing {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                height: 2px;
+                background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
+                border-radius: 999px;
+                filter: drop-shadow(0 0 6px #699bff);
+                -webkit-animation: tail 3000ms ease-in-out infinite,
+                    shooting 3000ms ease-in-out infinite;
+                animation: tail 3000ms ease-in-out infinite,
+                    shooting 3000ms ease-in-out infinite;
+            }
+
+            .untoldcoing::before {
+                content: "";
+                position: absolute;
+                top: calc(50% - 1px);
+                right: 0;
+                height: 2px;
+                background: linear-gradient(-45deg,
+                        rgba(0, 0, 255, 0),
+                        #5f91ff,
+                        rgba(0, 0, 255, 0));
+                transform: translateX(50%) rotateZ(45deg);
+                border-radius: 100%;
+                -webkit-animation: shining 3000ms ease-in-out infinite;
+                animation: shining 3000ms ease-in-out infinite;
+            }
+
+            .untoldcoing::after {
+                content: "";
+                position: absolute;
+                top: calc(50% - 1px);
+                right: 0;
+                height: 2px;
+                background: linear-gradient(-45deg,
+                        rgba(0, 0, 255, 0),
+                        #5f91ff,
+                        rgba(0, 0, 255, 0));
+                transform: translateX(50%) rotateZ(45deg);
+                border-radius: 100%;
+                -webkit-animation: shining 3000ms ease-in-out infinite;
+                animation: shining 3000ms ease-in-out infinite;
+                transform: translateX(50%) rotateZ(-45deg);
+            }
+
+            .untoldcoing:nth-child(1) {
+                top: calc(50% - 132px);
+                left: calc(50% - 7px);
+                -webkit-animation-delay: 2500ms;
+                animation-delay: 2500ms;
+            }
+
+            .untoldcoing:nth-child(1)::before,
+            .untoldcoing:nth-child(1)::after {
+                -webkit-animation-delay: 2500ms;
+                animation-delay: 2500ms;
+            }
+
+            .untoldcoing:nth-child(2) {
+                top: calc(50% - -109px);
+                left: calc(50% - 96px);
+                -webkit-animation-delay: 1747ms;
+                animation-delay: 1747ms;
+            }
+
+            .untoldcoing:nth-child(2)::before,
+            .untoldcoing:nth-child(2)::after {
+                -webkit-animation-delay: 1747ms;
+                animation-delay: 1747ms;
+            }
+
+            .untoldcoing:nth-child(3) {
+                top: calc(50% - -168px);
+                left: calc(50% - 12px);
+                -webkit-animation-delay: 8783ms;
+                animation-delay: 8783ms;
+            }
+
+            .untoldcoing:nth-child(3)::before,
+            .untoldcoing:nth-child(3)::after {
+                -webkit-animation-delay: 8783ms;
+                animation-delay: 8783ms;
+            }
+
+            .untoldcoing:nth-child(4) {
+                top: calc(50% - 62px);
+                left: calc(50% - 145px);
+                -webkit-animation-delay: 211ms;
+                animation-delay: 211ms;
+            }
+
+            .untoldcoing:nth-child(4)::before,
+            .untoldcoing:nth-child(4)::after {
+                -webkit-animation-delay: 211ms;
+                animation-delay: 211ms;
+            }
+
+            .untoldcoing:nth-child(5) {
+                top: calc(50% - -188px);
+                left: calc(50% - 109px);
+                -webkit-animation-delay: 3434ms;
+                animation-delay: 3434ms;
+            }
+
+            .untoldcoing:nth-child(5)::before,
+            .untoldcoing:nth-child(5)::after {
+                -webkit-animation-delay: 3434ms;
+                animation-delay: 3434ms;
+            }
+
+            .untoldcoing:nth-child(6) {
+                top: calc(50% - -157px);
+                left: calc(50% - 15px);
+                -webkit-animation-delay: 5982ms;
+                animation-delay: 5982ms;
+            }
+
+            .untoldcoing:nth-child(6)::before,
+            .untoldcoing:nth-child(6)::after {
+                -webkit-animation-delay: 5982ms;
+                animation-delay: 5982ms;
+            }
+
+            .untoldcoing:nth-child(7) {
+                top: calc(50% - 62px);
+                left: calc(50% - 294px);
+                -webkit-animation-delay: 4694ms;
+                animation-delay: 4694ms;
+            }
+
+            .untoldcoing:nth-child(7)::before,
+            .untoldcoing:nth-child(7)::after {
+                -webkit-animation-delay: 4694ms;
+                animation-delay: 4694ms;
+            }
+
+            .untoldcoing:nth-child(8) {
+                top: calc(50% - 40px);
+                left: calc(50% - 13px);
+                -webkit-animation-delay: 5844ms;
+                animation-delay: 5844ms;
+            }
+
+            .untoldcoing:nth-child(8)::before,
+            .untoldcoing:nth-child(8)::after {
+                -webkit-animation-delay: 5844ms;
+                animation-delay: 5844ms;
+            }
+
+            .untoldcoing:nth-child(9) {
+                top: calc(50% - 173px);
+                left: calc(50% - 97px);
+                -webkit-animation-delay: 9303ms;
+                animation-delay: 9303ms;
+            }
+
+            .untoldcoing:nth-child(9)::before,
+            .untoldcoing:nth-child(9)::after {
+                -webkit-animation-delay: 9303ms;
+                animation-delay: 9303ms;
+            }
+
+            .untoldcoing:nth-child(10) {
+                top: calc(50% - 123px);
+                left: calc(50% - 297px);
+                -webkit-animation-delay: 2218ms;
+                animation-delay: 2218ms;
+            }
+
+            .shooting_star:nth-child(10)::before,
+            .shooting_star:nth-child(10)::after {
+                -webkit-animation-delay: 2218ms;
+                animation-delay: 2218ms;
+            }
+
+            .shooting_star:nth-child(11) {
+                top: calc(50% - 172px);
+                left: calc(50% - 3px);
+                -webkit-animation-delay: 5877ms;
+                animation-delay: 5877ms;
+            }
+
+            .shooting_star:nth-child(11)::before,
+            .shooting_star:nth-child(11)::after {
+                -webkit-animation-delay: 5877ms;
+                animation-delay: 5877ms;
+            }
+
+            .shooting_star:nth-child(12) {
+                top: calc(50% - -68px);
+                left: calc(50% - 277px);
+                -webkit-animation-delay: 4381ms;
+                animation-delay: 4381ms;
+            }
+
+            .shooting_star:nth-child(12)::before,
+            .shooting_star:nth-child(12)::after {
+                -webkit-animation-delay: 4381ms;
+                animation-delay: 4381ms;
+            }
+
+            .shooting_star:nth-child(13) {
+                top: calc(50% - -16px);
+                left: calc(50% - 34px);
+                -webkit-animation-delay: 4255ms;
+                animation-delay: 4255ms;
+            }
+
+            .shooting_star:nth-child(13)::before,
+            .shooting_star:nth-child(13)::after {
+                -webkit-animation-delay: 4255ms;
+                animation-delay: 4255ms;
+            }
+
+            .shooting_star:nth-child(14) {
+                top: calc(50% - 131px);
+                left: calc(50% - 29px);
+                -webkit-animation-delay: 6968ms;
+                animation-delay: 6968ms;
+            }
+
+            .shooting_star:nth-child(14)::before,
+            .shooting_star:nth-child(14)::after {
+                -webkit-animation-delay: 6968ms;
+                animation-delay: 6968ms;
+            }
+
+            .shooting_star:nth-child(15) {
+                top: calc(50% - 100px);
+                left: calc(50% - 196px);
+                -webkit-animation-delay: 1070ms;
+                animation-delay: 1070ms;
+            }
+
+            .shooting_star:nth-child(15)::before,
+            .shooting_star:nth-child(15)::after {
+                -webkit-animation-delay: 1070ms;
+                animation-delay: 1070ms;
+            }
+
+            .shooting_star:nth-child(16) {
+                top: calc(50% - 130px);
+                left: calc(50% - 126px);
+                -webkit-animation-delay: 9384ms;
+                animation-delay: 9384ms;
+            }
+
+            .shooting_star:nth-child(16)::before,
+            .shooting_star:nth-child(16)::after {
+                -webkit-animation-delay: 9384ms;
+                animation-delay: 9384ms;
+            }
+
+            .shooting_star:nth-child(17) {
+                top: calc(50% - -21px);
+                left: calc(50% - 225px);
+                -webkit-animation-delay: 5608ms;
+                animation-delay: 5608ms;
+            }
+
+            .shooting_star:nth-child(17)::before,
+            .shooting_star:nth-child(17)::after {
+                -webkit-animation-delay: 5608ms;
+                animation-delay: 5608ms;
+            }
+
+            .shooting_star:nth-child(18) {
+                top: calc(50% - -179px);
+                left: calc(50% - 163px);
+                -webkit-animation-delay: 7217ms;
+                animation-delay: 7217ms;
+            }
+
+            .shooting_star:nth-child(18)::before,
+            .shooting_star:nth-child(18)::after {
+                -webkit-animation-delay: 7217ms;
+                animation-delay: 7217ms;
+            }
+
+            .shooting_star:nth-child(19) {
+                top: calc(50% - 127px);
+                left: calc(50% - 290px);
+                -webkit-animation-delay: 7010ms;
+                animation-delay: 7010ms;
+            }
+
+            .untoldcoing:nth-child(19)::before,
+            .untoldcoing:nth-child(19)::after {
+                -webkit-animation-delay: 7010ms;
+                animation-delay: 7010ms;
+            }
+
+            .untoldcoing:nth-child(20) {
+                top: calc(50% - -163px);
+                left: calc(50% - 161px);
+                -webkit-animation-delay: 170ms;
+                animation-delay: 170ms;
+            }
+
+            .untoldcoing:nth-child(20)::before,
+            .untoldcoing:nth-child(20)::after {
+                -webkit-animation-delay: 170ms;
+                animation-delay: 170ms;
+            }
+
+            @-webkit-keyframes tail {
+                0% {
+                    width: 0;
+                }
+
+                30% {
+                    width: 100px;
+                }
+
+                100% {
+                    width: 0;
+                }
+            }
+
+            @keyframes tail {
+                0% {
+                    width: 0;
+                }
+
+                30% {
+                    width: 100px;
+                }
+
+                100% {
+                    width: 0;
+                }
+            }
+
+            @-webkit-keyframes shining {
+                0% {
+                    width: 0;
+                }
+
+                50% {
+                    width: 30px;
+                }
+
+                100% {
+                    width: 0;
+                }
+            }
+
+            @keyframes shining {
+                0% {
+                    width: 0;
+                }
+
+                50% {
+                    width: 30px;
+                }
+
+                100% {
+                    width: 0;
+                }
+            }
+
+            @-webkit-keyframes shooting {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(300px);
+                }
+            }
+
+            @keyframes shooting {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(300px);
+                }
+            }
+
+            @-webkit-keyframes sky {
+                0% {
+                    transform: rotate(45deg);
+                }
+
+                100% {
+                    transform: rotate(405deg);
+                }
+            }
+
+            @keyframes sky {
+                0% {
+                    transform: rotate(45deg);
+                }
+
+                100% {
+                    transform: rotate(405deg);
+                }
+            }
+
+            p {
+                position: absolute;
+                font-size: 50px;
+                font-weight: 900;
+                -webkit-text-stroke: 1px rgb(54, 101, 140);
+                color: transparent;
+                animation: untoldcoding 5s infinite ease-in-out;
+            }
+        </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Slider main container -->
+    <div class="card">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="image/i1.png" />
+            <h2>Create Account</h2>
+            <h3>Tell us who you are</h3>
+            <input type="text" placeholder="Your name" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/i2.png" />
+            <h2>Create Account</h2>
+            <h3>Tell us your email</h3>
+            <input type="text" placeholder="Your email" />
+          </div>
+          <div class="swiper-slide">
+            <div className="image-wrapper">
+              <img src="image/i3.png" />
+            </div>
+            <h2>Security Info</h2>
+            <h3>Enter a strong password</h3>
+            <input type="password" placeholder="Your password" />
+          </div>
+          <div class="swiper-slide">
+            <div className="image-wrapper">
+              <img src="image/i1.png" />
+            </div>
+            <h2>Get Started</h2>
+            <h3>You're all set and ready</h3>
+            <a href="index.html">let's Go</a>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  speed: 500,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+    </script>
+    <style>
+        
+        html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #1c1c22;
+  font-family: "Euclid Circular A";
+  text-align: center;
+}
+
+.card {
+  width: 360px;
+  padding: 0;
+  border-radius: 10px;
+  background: #181822;
+  z-index: 10px;
+  background-clip: border-box;
+  box-shadow: 0px -6.8px 9.8px rgba(0, 0, 0, 0.003),
+    0px -10.8px 23.5px rgba(0, 0, 0, 0.008),
+    0px -10.3px 44.3px rgba(0, 0, 0, 0.016),
+    0px -1.5px 79.1px rgba(0, 0, 0, 0.026),
+    0px 28.5px 147.9px rgba(0, 0, 0, 0.042), 0px 174px 354px rgba(0, 0, 0, 0.07);
+}
+
+h2 {
+  color: #f9f9f9;
+  margin: 0 0 6px;
+  font-weight: 500;
+}
+
+h3 {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 0 24px;
+  font-weight: 400;
+  font-size: 14px;
+  align-self: stretch;
+}
+
+input,
+button {
+  display: block;
+  width: 240px;
+  height: 48px;
+  margin: 0 70px;
+  border-radius: 24px;
+  font-size: 16px;
+  font-family: inherit;
+  outline-color: #3181f8;
+  text-align: center;
+}
+
+input {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  padding: 12px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+a {
+  background: #4c337d;
+  color: #f9f9f9;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0 130px;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  box-shadow: none;
+  background: #31294b;
+  width: 16px;
+  height: 16px;
+}
+
+.swiper-horizontal .swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: auto;
+  bottom: 56px;
+}
+
+.swiper-slide img {
+  height: 170px;
+  margin-bottom: 10px;
+}
+
+
+    </style>
+  </body>
+</html>
